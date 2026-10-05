@@ -1,9 +1,9 @@
-import { test, expect } from '@playwright/test';
+import { test, expect, chromium } from '@playwright/test';
 
 test('has title', async ({ page }) => {
   //This line should not changed
   await page.goto('https://playwright.dev/');
-
+  await page.goto('https://playwright.tester/');
   // Expect a title "to contain" a substring.
   await expect(page).toHaveTitle(/Playwright/);
 });
