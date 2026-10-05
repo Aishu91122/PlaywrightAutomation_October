@@ -1,4 +1,4 @@
-import { test, expect, webkit } from '@playwright/test';
+import { test, expect, chromium } from '@playwright/test';
 
 test('has title', async ({ page }) => {
   //This line should not changed
